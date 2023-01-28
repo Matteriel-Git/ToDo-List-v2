@@ -1,0 +1,47 @@
+
+
+
+
+.todos {
+    margin-bottom: 4rem;
+}
+
+.todos li{
+    background-color: white;
+    border-radius: var(--global-border-radius);
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todos li div {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.todos li.complete {
+    background-color: var(--color-disabled);
+    text-decoration: line-through;
+    color: var(--color-text-disabled);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--color-text);
+    border-radius: 100%;
+    display: grid;
+    place-content: center;
+}
+
+inputp[type="checkbox"]::before {
+    content: 'x';
+    transform: scale(0);
+    transition: ;
+}
