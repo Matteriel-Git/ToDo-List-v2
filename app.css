@@ -43,5 +43,4 @@ input[type="checkbox"] {
 inputp[type="checkbox"]::before {
     content: 'x';
     transform: scale(0);
-    transition: ;
 }
